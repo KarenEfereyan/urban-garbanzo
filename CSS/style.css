@@ -1,0 +1,94 @@
+body {
+  /* font-family: "Tangerine", serif; */
+  font-family: "Karla", sans-serif;
+  font-family: "Gelasio", serif;
+  font-family: "Ibarra Real Nova", serif;
+  background-color: gainsboro;
+}
+.grid-container .full {
+  background-color: white;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 40px;
+  height: 320px;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+.grid-container .full > h2 {
+  color: aqua;
+  letter-spacing: 2px;
+}
+.grid-container .full > h3 {
+  color: chartreuse;
+  letter-spacing: 2px;
+}
+.grid-container .full p.first {
+  color: dimgray;
+  padding-top: 20px;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+.grid-container .full p.second {
+  color: dimgray;
+  padding-top: 20px;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+.grid-parent .subs {
+  background-color: hsl(179, 62%, 43%);
+  padding: 10px 40px;
+  height: 350px;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+.grid-parent .subs h2 {
+  color: #fff;
+}
+.grid-parent .subs p.fee {
+  margin-top: 30px;
+  color: hsl(218, 22%, 67%);
+  opacity: 0.8;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.grid-parent .subs h3 {
+  color: white;
+  margin-top: 25px;
+}
+.grid-parent .subs button {
+  margin-top: 25px;
+  padding: 18px;
+  background-color: hsl(71, 73%, 54%);
+  width: 280px;
+  border-radius: 10px;
+  border-style: hidden;
+  color: white;
+  font-size: 16px;
+}
+.grid-parent .subs button:hover {
+  width: 350px;
+  font-size: 30px;
+  background-color: red;
+  color: aqua;
+  padding-left: 90px;
+}
+.grid-parent .choose {
+  background-color: rgb(68, 233, 233);
+  padding: 10px 40px;
+  height: 350px;
+  border-bottom-right-radius: 2%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
+.grid-parent .choose h2 {
+  color: white;
+}
+.grid-parent p {
+  color: white;
+  opacity: 0.66;
+  font-size: 16px;
+}
