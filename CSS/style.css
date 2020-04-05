@@ -1,72 +1,112 @@
 body {
-font-family: 'Karla', sans-serif;
-font-size: 16px;
-background-color:   hsl(204, 43%, 93%);
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Gotu', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  background-color:   hsl(204, 43%, 93%);
 }
-.grid-container .full {
-  margin-top: 50px;
+/**Container Styles **/
+.join{
   background-color: white;
-  padding:  10px 40px;
-  border-radius: 2%;
+  padding:  20px 40px;
+  border-radius: 10px;
 }
-.grid-container .full > h2 {
+.join h2 {
   color: hsl(179, 62%, 43%);
+  font-weight:800;
 }
-.grid-container .full > h3 {
+.join h3 {
   color:  hsl(71, 73%, 54%);
+  font-weight:700;
 }
-.grid-container .full > p {
-  padding-top: 5px;
+.join p{
   color:  hsl(218, 22%, 67%);
-  line-height: 18px;
+  line-height: 1em;
   letter-spacing: 1px;
 }
-.grid-parent .subs {
+/**Subscription Styles**/
+.subscription{
   background-color: hsl(179, 62%, 43%);
-  padding: 10px 40px;
-  height: 323px;
-  border-radius: 2%;
+  border-radius: 10px;
 }
-.grid-parent .subs h3{
+.subscription h3{
   color:  hsl(204, 43%, 93%);
 }
-.grid-parent .subs p.fee {
+.subscription p.fee {
   margin-top: 30px;
   color:hsl(204, 43%, 93%);
 }
-.grid-parent .subs p.fee > span{
+.subscription p.fee > span{
   color: #fff;
   font-size: 40px;
   font-weight: 400;
 }
-.grid-parent .subs h4 {
+.subscription h4 {
   color: hsl(204, 43%, 93%);
 }
-.grid-parent .subs button {
-  margin: 10px 0;
-  padding: 15px;
+.subscription button {
+  margin: 8px 2px;
+  padding: 12px;
   background-color:hsl(71, 73%, 54%);
   width: 200px;
+  text-transform: capitalize;
   border-radius: 5px;
   border-style: hidden;
   color: #fff;
 }
-.grid-parent .subs button:hover {
+.subscription button:hover {
   width: 300px;
-  font-size: 30px;
+  font-size: 20px;
   background-color: orange;
   color: aqua;
-  padding-left: 60px;
+  padding-left: 40px;
 }
-.grid-parent .choose {
+/**Choice Styles**/
+.choice{
   background-color: rgb(68, 233, 233);
-  padding: 10px 40px;
-  height: 323px;
-  border-radius: 2%;
+  border-radius: 10px;
+  padding-top:25px;
+  padding-left:35px;
 }
-.grid-parent .choose h3 {
+.choice h3 {
   color:  hsl(204, 43%, 93%);
 }
-.grid-parent .choose > p {
+.choice > p {
   color: hsl(204, 43%, 93%);
+  margin-top:15px;
+
 }
+/**Media Queries**/
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {..}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+  h3{
+    font-size:23px;
+  }
+  h4{
+    font-size:20px;
+  }
+  .choice p{
+    font-size:17px;
+  }
+  .choice{
+    height:350px;
+  }
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+  .subscription{
+    height:350px;
+  }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+ .container{
+    max-width:1000px;
+  } 
+}
+
