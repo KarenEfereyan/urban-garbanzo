@@ -1,68 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--Link to font families-->
-  <link href="https://fonts.googleapis.com/css?family=Gotu|Raleway|Roboto&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-    <title>Single Grid Component</title>
-    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
-  </head>
-  <body>
-    <div class="container mt-5">
-      <div class="join">
-      <div class="row ml-3">
-        <div col->
-          <h2>Join our community</h2>
-          <h3 class="mt-3">30-day, hassle-free money back guarantee</h3>
-         <p class="mt-3 pt-1">
-          Gain access to our full library of tutorials along with expert code
-          reviews.<br><br>Perfect for any developers who are serious about honing their skills.
-        </p>
-        </div>
-      </div> 
-    </div>
-</div>  
-<!--Subscription and Choice Row-->
-      <div class="container">
-         <div class="row no-gutters">
-           <div class="col-xl-6 col-lg-6 col-md-6">
-             <div class="subscription p-5 mx-auto">
-                <h3>Monthly Subscription</h3>
-                <p class="fee"><span >$29</span>&nbsp;&nbsp;per month</p>
-                <h4>Full access for less than $1 a day.</h4>
-                <button class="cta">Sign Up</button>
-             </div>
-           </div>
-          <div class="col-xl-6 col-lg-6 col-md-6">
-            <div class="choice">
-                <h3>Why Us</h3>
-                <p>Tutorials by industry experts</p>
-                <p>Peer and expert code reviews</p>
-                <p>Coding exercises</p>
-                <p>Access to our github repos</p>
-                <p>Community forums</p>
-                <p>Flashcard decks</p>
-                <p>New Videos every week</p>
-            </div>
-          </div>
-        </div> 
-      </div>
- <!--First Content -->
-    <!--  -->
-<!--Second content-->
-          
-<!--Third Content-->
-          
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color:hsl(218, 32%, 80%);
+    }
+    .container{
+      margin: 70px 25px;
+    }
+    .top, 
+    .left,
+    .right{
+      padding: 15px 22px;
+    }
+    h1{
+      font-size:32px;
+    }
+    .top{
+      background-color:#fff;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .top h1{
+      color:hsl(179, 62%, 43%);
+      font-size:28px;
+    }
+    .top h3{
+      color:hsl(71, 73%, 54%);
+      font-size: 24px;
+    }
+    .top p{
+      color:hsl(218, 22%, 67%);
+      font-size:16px;
+      line-height: 1.5rem;
+    }
+    .left{
+      background-color: hsl(179, 62%, 43%);
+      color:#fff;
+    }
+    .left p{
+      color:hsl(204, 43%, 93%);
+      font-weight:100;
+    } 
+    .left p span.big{
+      font-size:35px;
+      color:#fff;
+    }
+     .left button{
+      background-color: hsl(71, 73%, 54%);
+      color:#fff;
+      width:80%;
+      padding: 15px 50px;
+      border:transparent;
+      border-radius:5px;
+    }
+    .right{
+      background-color: hsl(179, 64%, 50%);
+      color:#fff;
+      border-bottom-left-radius: 20px;
+       border-bottom-right-radius: 20px;
+    }
+    .right ul{
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .right ul li {
+      padding-top:10px;
+      color:hsl(204, 43%, 93%);
+    }
+    /**Responsiveness**/
+    @media only screen and (min-width:860px){
+      .flex-display{
+        display:flex; 
+    }
+    .left, 
+    .right{
+      width: 50%;
+    }
+    .left button{
+      width:60%;
+    }
+    .left{
+      border-bottom-left-radius: 20px;
+    }
+    .right{
+      border-bottom-left-radius: 0;
+    }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <section class="top">
+    <h1>
+      Join our community
+    </h1>
+
+    <h3>
+      30-day, hassle-free money back guarantee</h3>
+  
+   <p>
+    Gain access to our full library of tutorials along with expert code reviews. <br>
+    Perfect for any developers who are serious about honing their skills.
+   </p>
+  </section>
+ 
+
+  <div class="flex-display">
+    <section class="left">
+      <h1>Monthly Subscription</h1>
+    
+      <p><span class="big">&dollar;29 </span>per month</p>
+    
+      <p>Full access for less than &dollar;1 a day</p>
+    
+     <button>Sign Up</button> 
+    </section>
+    
+    <section class="right">
+      <h1>Why Us</h1>
+    <ul> 
+      <li>Tutorials by industry experts</li>
+      <li>Peer &amp; expert code review</li>
+      <li> Coding exercises</li> 
+      <li> Access to our GitHub repos</li>
+     <li> Community forum</li>
+    <li>  Flashcard decks</li>
+     <li> New videos every week</li></ul>
+     
+    </section>
+  </div>
+
+</div>
+  
+ 
+</body>
 </html>
